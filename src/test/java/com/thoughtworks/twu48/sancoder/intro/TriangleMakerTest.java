@@ -9,7 +9,12 @@ import static org.hamcrest.Matchers.*;
 public class TriangleMakerTest {
 
     @Test
-    public void should_make_a_star() throws Exception {
+    public void should_make_a_star() {
         assertThat("mkAStar", TriangleMaker.mkAStar(), equalTo("*"));
+    }
+
+    @Test
+    public void should_make_a_horizontal_line() throws Exception {
+        assertThat("mkHorizontalLine", TriangleMaker.mkHorizontalLine(), equalTo("********"));
     }
 }
