@@ -27,4 +27,9 @@ public class StarMakerTest {
     public void should_make_a_right_triangle() {
         assertThat("mkRightTriangle", StarMaker.mkRightTriangle(3), equalTo("*\n**\n***"));
     }
+
+    @Test
+    public void should_make_a_isosceles_triangle() {
+        assertThat("mkIsoscelesTriangle", StarMaker.mkIsoscelesTriangle(3), equalTo("  *  \n *** \n*****"));
+    }
 }

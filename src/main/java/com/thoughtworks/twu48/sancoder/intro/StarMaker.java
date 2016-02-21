@@ -27,4 +27,13 @@ public class StarMaker {
         }
         return StringUtils.join(lines, '\n');
     }
+
+    public static String mkIsoscelesTriangle(int count) {
+        int lineSize = count * 2 - 1;
+        String[] lines = new String[count];
+        for (int i = 0; i < lines.length; i++) {
+            lines[i] = StringUtils.center(mkHorizontalLine(i * 2 + 1), lineSize);
+        }
+        return StringUtils.join(lines, '\n');
+    }
 }

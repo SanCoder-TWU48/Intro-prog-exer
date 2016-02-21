@@ -8,12 +8,17 @@ public class IntroApp {
 
     public static void exercisePrinter() {
 
-        System.out.println(StarMaker.mkAStar());
+        print(StarMaker.mkAStar());
+        print(StarMaker.mkHorizontalLine(8));
+        print(StarMaker.mkVerticalLine(3));
+        print(StarMaker.mkRightTriangle(3));
+        print(StarMaker.mkIsoscelesTriangle(3));
+    }
 
-        System.out.println(StarMaker.mkHorizontalLine(8));
-
-        System.out.println(StarMaker.mkVerticalLine(3));
-
-        System.out.println(StarMaker.mkRightTriangle(3));
+    private static void print(String graph) {
+        System.out.println("==========================");
+        System.out.println("");
+        System.out.println(graph);
+        System.out.println("");
     }
 }
