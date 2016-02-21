@@ -2,13 +2,14 @@ package com.thoughtworks.twu48.sancoder.intro;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.*;
+import static org.hamcrest.Matchers.*;
 
 //Created by SanCoder on 2/21/16.
 public class TriangleMakerTest {
 
     @Test
-    public void testMkAStar() throws Exception {
-
+    public void should_make_a_star() throws Exception {
+        assertThat("mkAStar", TriangleMaker.mkAStar(), equalTo("*"));
     }
 }
