@@ -51,4 +51,26 @@ public class GraphMakerTest {
                         " *** \n" +
                         "  *  "));
     }
+
+    @Test
+    public void should_make_a_diamond_with_name_when_name_is_short_enough() {
+        assertThat("mkDiamond",
+                GraphMaker.mkDiamondWithName(3, "Bill"),
+                equalTo("  *  \n" +
+                        " *** \n" +
+                        "Bill \n" +
+                        " *** \n" +
+                        "  *  "));
+    }
+
+    @Test
+    public void should_make_a_diamond_with_name_when_name_is_too_long() {
+        assertThat("mkDiamond",
+                GraphMaker.mkDiamondWithName(3, "Jianming Qu"),
+                equalTo("     *     \n" +
+                        "    ***    \n" +
+                        "Jianming Qu\n" +
+                        "    ***    \n" +
+                        "     *     "));
+    }
 }

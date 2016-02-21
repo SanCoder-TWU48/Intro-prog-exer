@@ -14,6 +14,7 @@ public class IntroApp {
         print(GraphMaker.mkRightTriangle(3));
         print(GraphMaker.mkIsoscelesTriangle(3));
         print(GraphMaker.mkDiamond(3));
+        print(GraphMaker.mkDiamondWithName(3, "Jianming Qu"));
     }
 
     private static void print(String graph) {
