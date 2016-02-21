@@ -10,8 +10,8 @@ public class IntroApp {
 
         System.out.println(TriangleMaker.mkAStar());
 
-        System.out.println(TriangleMaker.mkHorizontalLine());
+        System.out.println(TriangleMaker.mkHorizontalLine(8));
 
-        System.out.println(TriangleMaker.mkVerticalLine());
+        System.out.println(TriangleMaker.mkVerticalLine(3));
     }
 }
