@@ -8,10 +8,12 @@ public class IntroApp {
 
     public static void exercisePrinter() {
 
-        System.out.println(TriangleMaker.mkAStar());
+        System.out.println(StarMaker.mkAStar());
 
-        System.out.println(TriangleMaker.mkHorizontalLine(8));
+        System.out.println(StarMaker.mkHorizontalLine(8));
 
-        System.out.println(TriangleMaker.mkVerticalLine(3));
+        System.out.println(StarMaker.mkVerticalLine(3));
+
+        System.out.println(StarMaker.mkRightTriangle(3));
     }
 }
