@@ -4,19 +4,19 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;
 
-public class StarMaker {
+public class GraphMaker {
 
-    public static String mkAStar() {
+    public static String mkDot() {
         return "*";
     }
 
     public static String mkHorizontalLine(int count) {
-        return StringUtils.repeat(mkAStar(), count);
+        return StringUtils.repeat(mkDot(), count);
     }
 
     public static String mkVerticalLine(int count) {
         String[] stars = new String[count];
-        Arrays.fill(stars, mkAStar());
+        Arrays.fill(stars, mkDot());
         return StringUtils.join(stars, '\n');
     }
 
