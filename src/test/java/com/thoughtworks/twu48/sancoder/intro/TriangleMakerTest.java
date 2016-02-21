@@ -14,7 +14,12 @@ public class TriangleMakerTest {
     }
 
     @Test
-    public void should_make_a_horizontal_line() throws Exception {
+    public void should_make_a_horizontal_line() {
         assertThat("mkHorizontalLine", TriangleMaker.mkHorizontalLine(), equalTo("********"));
+    }
+
+    @Test
+    public void testMkVerticalLine() {
+        assertThat("mkVerticalLine", TriangleMaker.mkVerticalLine(), equalTo("*\n*\n*"));
     }
 }

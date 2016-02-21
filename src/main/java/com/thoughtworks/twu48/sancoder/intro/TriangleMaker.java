@@ -9,4 +9,8 @@ public class TriangleMaker {
     public static String mkHorizontalLine() {
         return "********";
     }
+
+    public static String mkVerticalLine() {
+        return "*\n*\n*";
+    }
 }

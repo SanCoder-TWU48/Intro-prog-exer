@@ -11,5 +11,7 @@ public class IntroApp {
         System.out.println(TriangleMaker.mkAStar());
 
         System.out.println(TriangleMaker.mkHorizontalLine());
+
+        System.out.println(TriangleMaker.mkVerticalLine());
     }
 }
