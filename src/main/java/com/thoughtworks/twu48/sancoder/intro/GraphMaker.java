@@ -36,4 +36,14 @@ public class GraphMaker {
         }
         return StringUtils.join(lines, '\n');
     }
+
+    public static String mkDiamond(int count) {
+        int size = count * 2 - 1;
+        String[] lines = new String[size];
+        for (int i = 0; i < lines.length; i++) {
+            int dotNum = 2 * (count - Math.abs(count - 1 - i)) - 1;
+            lines[i] = StringUtils.center(mkHorizontalLine(dotNum), size);
+        }
+        return StringUtils.join(lines, '\n');
+    }
 }

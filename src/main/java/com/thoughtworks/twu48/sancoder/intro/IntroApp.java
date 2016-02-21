@@ -13,6 +13,7 @@ public class IntroApp {
         print(GraphMaker.mkVerticalLine(3));
         print(GraphMaker.mkRightTriangle(3));
         print(GraphMaker.mkIsoscelesTriangle(3));
+        print(GraphMaker.mkDiamond(3));
     }
 
     private static void print(String graph) {
